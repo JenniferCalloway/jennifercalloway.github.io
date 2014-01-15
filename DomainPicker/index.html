@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<title>Domain Picker</title>
+	<meta charset="utf-8">	
+
+	<link rel="stylesheet" type="text/css" href="assets/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale =1.0, user-scalable = no">
+</head>
+
+
+<body>
+	<div class="cf">
+		<div class="mainheader cf">
+			<div class="container">
+				<a href="http://yodle.com" class="brand"><img src="assets/images/yodlelogo.png"></a>
+				<div class="blueinset cf">
+					<div class="section1">
+						<table>
+							<tr>
+								<td>Segment:</td>
+								<td>Plumber</td>
+								<td>Ad:</td>
+								<td>dfwpipe-restoration.com</td>
+							</tr>
+							<tr>
+								<td>Type:</td>
+								<td>Dynamic Mirror</td>
+								<td>Personal:</td>
+								<td>dfwpiperestoration.net</td>
+							</tr>
+						</table>
+					</div>
+					<div class="section2">
+						<button class="button"><a href="#">global</a></button>
+						<span>sanju@yodle.com</span>
+						<a href="#">Client View</a>
+						<span>|</span>
+						<a href="#">Sign Out</a>
+					</div>
+					<div class="section3">
+						<input type="search">
+					</div>
+				</div>
+				<ul class="topnav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Contact Manager</a></li>
+					<li><a href="#">Ad Stats</a></li>
+					<li><a href="#">Ad Campaigns</a></li>
+					<li><a href="#">Adversite</a></li>
+					<li><a href="#">Page Designer</a></li>
+					<li><a href="#">Coupons</a></li>
+					<li><a href="http://jenniferlcalloway.com/DomainPicker/YodleOrganic/index.html">Organic</a></li>
+					<li><a href="#">Email</a></li>
+					<li class="active"><a href="#">Account</a></li>
+				</ul>
+			</div>	
+		</div>
+		<div class="subnav">
+			<div class="container">
+				<ul>
+					<li><a href="#">Basic Info</a></li>
+					<li><a href="#">Business Profile (Beta)</a></li>
+					<li><a href="#">Account Setup (Beta)</a></li>
+					<li><a href="#">Account Activity</a></li>
+					<li><a href="#">My People</a></li>
+					<li><a href="#">Call Tracking</a></li>
+					<li><a href="file:///Users/jennifercalloway/Desktop/HTML%20and%20CSS%20Tests/DomainPicker/products/products.html">Products</a></li>
+					<li class="active"><a href="file:///Users/jennifercalloway/Desktop/HTML%20and%20CSS%20Tests/DomainPicker/index.html##">Domain &amp; Sites</a></li>
+					<li><a href="#">Billing</a></li>
+					<li><a href="#">Report Settings</a></li>
+					<li><a href="#">Notes</a></li>
+				</ul>	
+			</div>		
+		</div>	
+	</div>	
+
+	<div class="content-container">
+		<div class="headline">
+			<h1>Add a New Domain Record</h1>
+		</div>
+		<div class="underlined">
+			<h3>Select domain manually</h3>
+		</div>
+		<div class="selectDomain">
+			<input type="text"></input>
+			<span><em>(e.g. manhattancleaners.com)</em></span>
+			<div class="buttons">
+				<button><a href="#">Check Availability</a></button>
+				<button><a href="#">Buy Domain</a></button>
+				<button><a href="#">Transfer</a></button>
+				<button><a href="#">Client Owned</a></button>
+			</div>
+		</div>
+		<div class="underlined">
+			<h3>Select domain from auto-generated list</h3>
+		</div>
+		<span><em>To automatically generate a list of available domain names enter a few variables for each category below.</em></span>
+		<div class="row1 cf">
+			<div class="terms">
+				<span class="label">GEO Terms</span>
+				<input type="text" class="term"></input>
+				<button class="add" id="addGeoTerm"><img src="assets/images/plus.png"></button>
+				<ul class="add_terms"></ul>
+			</div>
+			<div class="terms">
+				<span class="label">Service Terms</span>
+				<input type="text" class="term"></input>
+				<button class="add" id="addServiceTerm"><img src="assets/images/plus.png"></button>
+				<ul class="add_terms"></ul>
+			</div>
+		</div>	
+		<div class="row2 cf">	
+			<div class="terms">
+				<span class="label">Business/Branding Terms</span>
+				<input type="text" class="term"></input>
+				<button class="add" id="addBusinessTerm"><img src="assets/images/plus.png"></button>
+				<ul class="add_terms"></ul>
+			</div>
+			<div class="tlds">
+				<span class="label">TLDs</span>
+				<div class="checkboxes">
+					<label><input type="checkbox">.com</label>
+					<label><input type="checkbox">.biz</label>
+					<label><input type="checkbox">.us</label>
+					<br>
+					<label><input type="checkbox">.net</label>
+					<label><input type="checkbox">.me</label>
+				</div>	
+			</div>
+		</div>	
+		<div class="generate">
+			<button>Generate Domain Choices</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			$('.add').click(function(){
+				var term = $(this).prev('.term').val();
+
+				console.log(term);
+				
+				var addedTerm  = '<li>';
+				    addedTerm += '<a type="image" class="deletebutton"><img src="assets/images/deletebutton.png"></a>';
+				    addedTerm += '<span class="newtext">' + term + '</span>';
+				    addedTerm += '</li>';
+
+				if (term.length > 0) {    
+					$(this).next('.add_terms').append(addedTerm);
+				}	
+			});
+
+			$('.add_terms').on('click', '.deletebutton', function() { 
+				console.log('called');
+				$(this).parent().remove();
+			});	
+		});
+
+		
+
+	</script>
+
+</body>
+</html>
