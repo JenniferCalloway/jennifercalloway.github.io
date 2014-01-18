@@ -167,20 +167,20 @@ section {
 	}
 }
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 760px) {
 	.large-image {
 		float: none;
 		width: 23%;
 		padding-top: 23%;
 		background-position: 57% 34%;
-		margin: 5% 0 0 9%;
+		margin: 5% 0 0 5%;
 	}
 
 	.text {
 		float: none;
-		margin: 5% 0 5% 5%;
+		margin: 5% 0 5% 2%;
 		font-size: 16px;
-		width: 320px;
+		width: 310px;
 	}
 
 	.text h1 {
@@ -189,13 +189,14 @@ section {
 
 	.bottom-half {
 		width: 150%;
+		height: 65%;
 		background-position: 85% 45%;
 	}
 
 	.details {
 		font-size: 18px;
-		width: 320px;
-		margin: 0 0 0 22%;
+		width: 310px;
+		margin: 0 0 0 19%;
 		padding-top: 5%;
 	}
 
