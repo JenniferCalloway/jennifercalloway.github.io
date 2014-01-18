@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body {
+	background: #551033;
+	font-size: 100%;
+}
+
+section {
+	width: 55%;
+	color: #CDC673;
+	font-family: 'Kite One', sans-serif;
+	font-size: 18px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.large-image {
+	float: left;
+	position: relative;
+	margin-top: 8%;
+	width: 40%;
+	height: auto;
+	padding-top: 40%;
+	background: white;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	background: url(Wine-bottle-food-photo.jpg) center;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.text {
+	float: left;
+	margin: 10% 0 0 5%;
+	line-height: 150%;
+	text-shadow: 1px 1px 3px #222;
+}
+
+.text h1 {
+	/*font-family: 'Niconne', cursive;*/
+	margin: 0 0 5% 0;
+	text-align: center;
+	font-size: 42px;
+	line-height: 140%;
+}
+
+.text p {
+	margin: 0 0 4% 0;
+}
+
+.text span {
+	font-size: 21px;
+}
+
+.bottom-half {
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+	background-position: 25% 45%;
+	height: 50%;
+	max-width: 1500px;
+	box-shadow: inset 0 30px 80px rgba(0,0,0,0.4);
+}
+
+.details {
+	margin: 10% auto;
+	padding-top: 5%;
+	color: #333;
+	font-size: 28px;
+	text-align: center;
+	width: 65%;
+}
+
+.details span {
+	display: inline-block;
+	margin: 3% auto 0;
+}
+
+.details span a {
+	text-decoration: none;
+	color: #333;
+	font-size: 30px;
+}
+
+.details span a:first-of-type {
+	font-weight: bold;
+}
+
+.details span a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+.copyright {
+	position: relative;
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	top: 70px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 950px) {
+	.large-image {
+		width: 32%;
+		height: auto;
+		padding-top: 32%;
+		margin-left: 2%;
+	}
+
+	section {
+		font-size: 16px;
+		width: 40%;
+	}
+
+	.text {
+		margin: 8% 0 0 4%;
+	}
+
+	.text h1 {
+		font-size: 28px;
+	}
+
+	.text span {
+		font-size: 18px;
+	}
+
+	.details {
+		font-size: 24px;
+		position: relative;
+		left: -7%;
+	}
+
+	.details span a {
+		font-size: 28px;
+	}
+}
+
+@media only screen and (max-width: 755px) {
+	
+}
+
+
