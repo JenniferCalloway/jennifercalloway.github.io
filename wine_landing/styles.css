@@ -82,7 +82,7 @@ section {
 	background-repeat: no-repeat;
 	background-position: 25% 45%;
 	height: 50%;
-	max-width: 1500px;
+	width: 100%;
 	box-shadow: inset 0 30px 80px rgba(0,0,0,0.4);
 }
 
@@ -129,7 +129,7 @@ section {
 		width: 32%;
 		height: auto;
 		padding-top: 32%;
-		margin-left: 2%;
+		margin-left: 3%;
 	}
 
 	section {
@@ -149,10 +149,17 @@ section {
 		font-size: 18px;
 	}
 
+	.bottom-half {
+		width: 150%;
+		height: 55%;
+		background-position: 75% 45%;
+	}
+
 	.details {
 		font-size: 24px;
 		position: relative;
-		left: -7%;
+		right: 18%;
+		padding-top: 8%;
 	}
 
 	.details span a {
@@ -160,8 +167,35 @@ section {
 	}
 }
 
-@media only screen and (max-width: 755px) {
-	
+@media only screen and (max-width: 765px) {
+	.large-image {
+		float: none;
+		margin: 5% auto 0;
+		width: 25%;
+		padding-top: 25%;
+		background-position: 65% 30%;
+	}
+
+	.text {
+		float: none;
+		margin: 5% auto 0;
+	}
+
+	.bottom-half {
+		width: 100%;
+		position: relative;
+		right: 0;
+		left: 15%;
+	}
+
+	.details {
+		font-size: 18px;
+	}
+
+	.details span a {
+		font-size: 20px;
+	}
+
 }
 
 
