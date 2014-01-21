@@ -24,7 +24,6 @@
 
 body {
 	background: #551033;
-	font-size: 100%;
 }
 
 section {
@@ -35,7 +34,8 @@ section {
 }
 
 .container {
-	width: 960px;
+	width: 100%;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -126,19 +126,17 @@ section {
 
 @media only screen and (max-width: 950px) {
 	.large-image {
-		width: 32%;
-		height: auto;
-		padding-top: 32%;
-		margin-left: 3%;
+		margin-left: 4%;
+		margin-top: 11%;
 	}
 
 	section {
 		font-size: 16px;
-		width: 40%;
+		width: 45%;
 	}
 
 	.text {
-		margin: 8% 0 0 4%;
+		margin: 10% 0 0 4%;
 	}
 
 	.text h1 {
@@ -149,17 +147,8 @@ section {
 		font-size: 18px;
 	}
 
-	.bottom-half {
-		width: 150%;
-		height: 55%;
-		background-position: 75% 45%;
-	}
-
 	.details {
 		font-size: 24px;
-		position: relative;
-		right: 18%;
-		padding-top: 12%;
 	}
 
 	.details span a {
@@ -167,20 +156,20 @@ section {
 	}
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 700px) {
 	.large-image {
 		float: none;
-		width: 23%;
-		padding-top: 23%;
-		background-position: 57% 34%;
-		margin: 5% 0 0 5%;
+		width: 250px;
+		padding-top: 250px;
+		margin: 5% auto;
+		background-position: 320px -102px;
 	}
 
 	.text {
 		float: none;
-		margin: 5% 0 5% 1%;
+		margin: 8% auto;
 		font-size: 16px;
-		width: 310px;
+		width: 95%;
 	}
 
 	.text h1 {
@@ -188,16 +177,14 @@ section {
 	}
 
 	.bottom-half {
-		width: 150%;
-		height: 100%;
-		background-position: 85% 45%;
+		background-position: 35% 45%;
+		height: 45%;
 	}
 
 	.details {
 		font-size: 18px;
-		width: 310px;
-		margin: 0 0 0 19%;
 		padding-top: 5%;
+		min-width: 80%;
 	}
 
 	.details span a {
