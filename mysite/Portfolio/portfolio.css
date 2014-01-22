@@ -64,14 +64,22 @@ h3 {
 	border: none;
 }
 
+#add-border {
+	border-bottom: 1px dashed #ccc;
+}
+
 .project a {
 	float: left;
+}
+
+.no-link a:hover {
+	cursor: default;
 }
 
 .text {
 	color: #444;
 	float: left;
-	margin: 60px 0 0 40px;
+	margin: 60px 0 0 60px;
 }
 
 .text p {
