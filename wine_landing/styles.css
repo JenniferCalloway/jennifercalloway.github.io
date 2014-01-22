@@ -30,7 +30,7 @@ section {
 	width: 55%;
 	color: #CDC673;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .container {
@@ -56,7 +56,7 @@ section {
 
 .text {
 	float: left;
-	margin: 10% 0 0 5%;
+	margin: 7.5% 0 0 5%;
 	line-height: 150%;
 	text-shadow: 1px 1px 3px #222;
 }
