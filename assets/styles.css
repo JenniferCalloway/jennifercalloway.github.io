@@ -100,14 +100,14 @@ body {
 .end {
 	background-color: #2E2E2E;
 	color: #fff;
-	height: 70px;
+	height: 55px;
 	margin: 0px;
-	padding-top: 25px;
+	padding-top: 18px;
 
 }
 
 .links {
-	text-align: center;
+	margin-left: 28%;
 }
 
 .links span {
@@ -116,7 +116,7 @@ body {
 
 .links a {
 	color: #fff;
-	padding: 0 1.5%;
+	padding: 0 3%;
 }
 
 
