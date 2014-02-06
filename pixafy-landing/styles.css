@@ -1,0 +1,312 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	/*background-color: #eee;*/
+	font-family: 'Helvetica', sans-serif;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.background {
+	width: 100%;
+	max-width: 1263px;
+	height: 1255px;
+	background-image: url("images/background.jpg");
+	margin: 0 auto;
+}
+
+.container {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.logo {
+	float: left;
+	margin: 4% 0 0 2%;
+}
+
+.upper {
+	float: right;
+	margin: 7% 0 0 2%;
+	background-color: rgba(0, 0, 0, .8);
+	padding: .5%;
+	width: 48%;
+}
+
+.upper a {
+	color: #fff;
+	text-decoration: none;
+	padding: 0 4.95% 0;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.upper a:hover {
+	color: #E55D22;
+}
+
+
+.banner {
+	margin: 10% 13%;
+}
+
+
+.content {
+	margin: 0 auto;
+	padding: 1% 2.5%;
+	background-color: #e8e9e9;
+	width: 90%;
+	font-family: 'Arial', sans-serif;
+	color: #231f20;
+}
+
+.content h3 {
+	margin: 1% 0;
+	font-size: 26px;
+}
+
+.content p {
+	margin: 0 0 1%;
+	width: 60%;
+	font-size: 14px;
+	line-height: 1.5;
+	float: left;
+}
+
+.learn-more {
+	float: right;
+	width: 130px;
+	height: 40px;
+	background-color: #E55D22;
+	text-decoration: none;
+	color: #fff;
+	padding: 1.2% 0 0 2.5%;
+	margin: 5% 1% 0 0;
+}
+
+.recent-work {
+	margin-top: 4%;
+}
+
+.recent-work h4 {
+	color: #9d9d9d;
+	margin: 2% 0;
+}
+
+.recent-work  img {
+	float: left;
+	margin: 0 0 0 3.5%;
+	position: relative;
+}
+
+.services {
+	width: 90%;
+	background: #000;
+	padding: 2%;
+	color: #fff;
+	position: absolute;
+	bottom: -5%;
+	left: 5%;
+}
+
+.service-types {
+	padding: 0 0 0 5%;
+}
+
+.service {
+	width: 33%;
+	float: left;
+}
+
+.service h3 {
+	font-size: 18px;
+	margin-bottom: 4%;
+}
+
+.service img {
+	float: left;
+	margin: 3.5% 0 1% 0;
+}
+
+.service p {
+	float: left;
+	font-size: 12px;
+	width: 65%;
+	margin:  3% 0 0 4%;
+}
+
+.learn-more-links {
+	display: block;
+	margin: 1% 0 0;
+}
+
+.learn-more-links a {
+	color: #E55D22;
+	text-decoration: none;
+	font-size: 14px;
+	font-style: italic;
+	display: inline-block;
+	width: 31%;
+	text-align: right;
+}
+
+.learn-more-links a:hover {
+	text-decoration: underline;
+}
+
+.learn-more-links a:active {
+	text-decoration: underline;
+}
+
+footer {
+	position: absolute;
+	top: 108%;
+	left: 5%;
+	width: 90%;
+}
+
+footer hr {
+	color: #d6d7d8;
+	margin-bottom: 1.5%;
+}
+
+nav {
+	width: 10%;
+	float: left;
+	font-size: 11px;
+}
+
+nav li {
+	list-style-type: none;
+	color: #d6d7d8;
+	padding: 2% 0;
+}
+
+nav li a {
+	list-style-type: none;
+	color: #d6d7d8;
+	text-decoration: none;
+	padding: 2% 0;
+}
+
+.section4 {
+	padding-left: 2%;
+} 
+
+nav li a:hover {
+	text-decoration: underline;
+	color: #E55D22;
+}
+
+nav li a:active {
+	text-decoration: underline;
+	color: #d6d7d8;
+}
+
+.social {
+	float: right;
+	display: block;
+	width: 30%;
+	text-align: right;
+}
+
+.social a {
+	color: #d6d7d8;
+	text-decoration: none;
+	font-size: 11px;
+	margin: 0 0 0 12%;
+}
+
+.social a:hover {
+	text-decoration: underline;
+}
+
+.social a:active {
+	text-decoration: underline;
+}
+
+#twitter:before {
+	content: url("images/twittericon.png");
+	position: absolute;
+	bottom: 83px;
+	right: 129px;
+}
+
+#twitter:hover:before {
+	content: url("images/orangetwitterlogo.png");
+	position: absolute;
+	bottom: 83px;
+	right: 129px;
+}
+
+#facebook:before {
+	content: url("images/facebookicon.png");
+	position: absolute;
+	right: 43px;
+	bottom: 83px;
+}
+
+#facebook:hover:before {
+	content: url("images/orangefacebooklogo.png");
+	position: absolute;
+	right: 43px;
+	bottom: 83px;
+}
+
+.bottom-links {
+	margin: 1% 0 0 0;
+}
+
+.bottom-links a {
+	display: inline-block;
+	list-style-type: none;
+	color: #d6d7d8;
+	text-decoration: none;
+	font-size: 11px;
+	margin: 0% 2.55% 0 0;
+}
+
+.bottom-links span {
+	display: inline-block;
+	color: #d6d7d8;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+.bottom-links a:hover {
+	text-decoration: underline;
+	color: #E55D22;
+}
+
+.bottom-links a:active {
+	text-decoration: underline;
+	color: #d6d7d8;
+}
+
+
+
+
